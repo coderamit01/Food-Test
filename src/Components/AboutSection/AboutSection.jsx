@@ -2,6 +2,7 @@ import Tabs from '../Tabs/Tabs';
 import AboutImg from '../../assets/images/about-image.jpeg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Counter from '../Counter/Counter';
+import Services from '../Services/Services';
 
 const AboutSection = () => {
   
@@ -20,6 +21,7 @@ return (
           <Tabs />
         </div>
       </div>
+      <Services />
     </div>
   </div>
 );

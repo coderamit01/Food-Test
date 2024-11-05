@@ -118,6 +118,28 @@ h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
+.services svg {
+  color: var(--text-red);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.1);
+}
+.services h4 {
+  font-size: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.services p {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
 /* About section style end  */
 
 
