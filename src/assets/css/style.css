@@ -1,0 +1,143 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --red: rgba(181, 43, 29, 1);
+  --text-red: rgba(189, 31, 23, 1);
+
+  --black: rgba(51, 51, 51, 1);
+}
+.ct-btn {
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  text-decoration: none;
+  color: var(--black);
+  background: rgba(254, 191, 0, 1);
+}
+.ptb-50 {
+  padding: 50px 0;
+}
+p,span {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 62px !important;
+  line-height: 62px !important;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/* Navbar style start */
+.header {
+  background: linear-gradient(123.4deg, #BD1F17 40.8%, #A61D13 76.4%, #8E1B0F 120.69%);
+}
+.header .nav-item .nav-link {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+.navbar-toggler {
+  border: 0 !important;
+  outline: 0;
+}
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+.navbar-toggler svg {
+  color: #fff;
+  font-size: 30px;
+}
+.collapse-navbar {
+  transition:  all .2s ease-in-out;
+}
+/* Navbar style end */
+/* About section style start  */
+.experience-badge {
+  padding: 10px;
+  top: 15px;
+  left: 25px;
+  box-shadow: -5px 22px 26px 0px rgba(95, 95, 95, 0.25);
+}
+.experience-badge .counter {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  height: 65px;
+  width: 65px;
+}
+.experience-badge span:last-child {
+  font-family: "Roboto", sans-serif;
+  line-height: 16px;
+  color: rgba(24, 24, 24, 1);
+
+}
+.about-content .nav-tabs {
+  border-bottom: 1px solid var(--red);
+}
+.about-content .nav-tabs .nav-link {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  color: var(--black);
+  border-radius: 0;
+}
+.about-content .nav-tabs .nav-link.active {
+  color: #fff;
+  background-color: var(--red);
+  border-color: var(--red);
+  border-radius: 0;
+}
+.about-content .nav-tabs .nav-link:hover:not(.active) {
+  color: var(--black);
+  background-color: rgba(181, 44, 29, 0.153);
+  border-color: rgba(181, 44, 29, 0.153);
+  border-radius: 0;
+}
+.about-content .tab-content {
+  padding: 20px 0 0;
+}
+.call-btn {
+  padding: 10px 25px;
+}
+.call-btn svg {
+  color: var(--text-red);
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.call-btn a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+/* About section style end  */
+
+
+/* Media Quary  */
+@media screen and (max-width: 1024px){
+  h2 {
+    font-size: 40px !important;
+    line-height: 42px !important;
+  }
+}
+@media screen and (max-width: 768px){
+  .ptb-50 {
+    padding: 30px 0;
+  }
+}
+@media screen and (max-width: 390px){
+  .ct-btn {
+    padding: 10px 15px;
+  }
+  .call-btn {
+    padding: 10px 15px;
+  }
+}
