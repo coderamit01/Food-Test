@@ -3,11 +3,12 @@ import AboutImg from '../../assets/images/about-image.jpeg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Counter from '../Counter/Counter';
 import Services from '../Services/Services';
+import BurgerImg from '../../assets/images/about-img.png'
 
 const AboutSection = () => {
   
 return (
-  <div className='ptb-50'>
+  <div className='ptb-50 position-relative'>
     <div className="container">
       <div className="row">
         <div className="col-lg-6 mb-4 mb-lg-0 position-relative">
@@ -17,9 +18,10 @@ return (
             <span>Market <br /> Experiences</span>
           </div>
         </div>
-        <div className="col-lg-6">
+        <div className="col-lg-6 ps-lg-5">
           <Tabs />
         </div>
+        <img src={BurgerImg} alt='' className='d-none d-lg-block position-absolute end-0 w-auto p-0 salad-img' />
       </div>
       <Services />
     </div>
