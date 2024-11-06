@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ServiceItem from '../ServiceItem/ServiceItem';
 import { FaAward } from 'react-icons/fa';
-import '../../assets/css/style.css';
 
 const Services = () => {
   return (
