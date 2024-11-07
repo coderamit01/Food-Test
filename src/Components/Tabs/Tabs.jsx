@@ -1,6 +1,7 @@
 import { BiSolidPhoneCall } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import YellowBtn from '../YellowBtn/YellowBtn';
 
 const Tabs = () => {
   return (
@@ -21,7 +22,7 @@ const Tabs = () => {
           <h2>Exceptional culinary experience and delicious food</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed est cursus. Vel hac convallis ipsum, facilisi odio pellentesque bibendum viverra tempus. Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna minim veniam nostrud exercitation.</p>
           <div className="d-flex align-items-center">
-            <Link to="" className='ct-btn'>About More</Link>
+            <YellowBtn link="#" text="About More" />
             <div className='call-btn d-flex align-items-center'>
               <BiSolidPhoneCall />
               <Link to="$" className='ms-2'>+88 3426 739 485</Link>

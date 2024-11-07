@@ -3,17 +3,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   padding: 0;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 400;
 }
+
 :root {
   --red: rgba(181, 43, 29, 1);
   --text-red: rgba(189, 31, 23, 1);
   --light-blue: rgba(10, 20, 37, 1);
   --black: rgba(51, 51, 51, 1);
+  --yellow: rgba(254, 191, 0, 1);
 }
+
 .ct-btn {
   display: inline-block;
   font-family: "Raleway", sans-serif;
@@ -25,19 +30,25 @@ body {
   color: var(--black);
   background: rgba(254, 191, 0, 1);
 }
+
 .ptb-50 {
   padding: 50px 0;
 }
+
 .pt-70 {
   padding-top: 70px;
 }
+
 .pb-70 {
   padding-bottom: 70px;
 }
-p,span {
+
+p,
+span {
   font-size: 16px;
   font-weight: 400;
 }
+
 h2 {
   font-family: "Bebas Neue", sans-serif;
   font-size: 62px !important;
@@ -45,29 +56,36 @@ h2 {
   font-weight: 700;
   text-transform: uppercase;
 }
+
 /* Navbar style start */
 .header {
   background: linear-gradient(123.4deg, #BD1F17 40.8%, #A61D13 76.4%, #8E1B0F 120.69%);
 }
+
 .header .nav-item .nav-link {
   font-family: "Raleway", sans-serif;
   font-size: 15px;
   font-weight: 500;
 }
+
 .navbar-toggler {
   border: 0 !important;
   outline: 0;
 }
+
 .navbar-toggler:focus {
   box-shadow: none !important;
 }
+
 .navbar-toggler svg {
   color: #fff;
   font-size: 30px;
 }
+
 .collapse-navbar {
-  transition:  all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
+
 /* Navbar style end */
 /* About section style start  */
 .experience-badge {
@@ -76,6 +94,7 @@ h2 {
   left: 25px;
   box-shadow: -5px 22px 26px 0px rgba(95, 95, 95, 0.25);
 }
+
 .experience-badge .counter {
   font-family: "Roboto", sans-serif;
   font-size: 25px;
@@ -83,45 +102,54 @@ h2 {
   height: 65px;
   width: 65px;
 }
+
 .experience-badge span:last-child {
   font-family: "Roboto", sans-serif;
   line-height: 16px;
   color: rgba(24, 24, 24, 1);
 
 }
+
 .about-content .nav-tabs {
   border-bottom: 1px solid var(--red);
 }
+
 .about-content .nav-tabs .nav-link {
   font-family: "Inter", sans-serif;
   font-size: 15px;
   color: var(--black);
   border-radius: 0;
 }
+
 .about-content .nav-tabs .nav-link.active {
   color: #fff;
   background-color: var(--red);
   border-color: var(--red);
   border-radius: 0;
 }
+
 .about-content .nav-tabs .nav-link:hover:not(.active) {
   color: var(--black);
   background-color: rgba(181, 44, 29, 0.153);
   border-color: rgba(181, 44, 29, 0.153);
   border-radius: 0;
 }
+
 .about-content .tab-content {
   padding: 20px 0 0;
 }
+
 .call-btn {
   padding: 10px 25px;
 }
+
 .call-btn svg {
   color: var(--text-red);
   font-size: 18px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
+
 .call-btn a {
   text-decoration: none;
   color: var(--black);
@@ -129,6 +157,7 @@ h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
+
 .services svg {
   color: var(--text-red);
   padding: 20px;
@@ -140,22 +169,26 @@ h2 {
   border-radius: 50%;
   box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.1);
 }
+
 .services h4 {
   font-size: 25px;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
 }
+
 .services p {
   font-size: 18px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
 }
+
 .salad-img {
   height: 50%;
   object-fit: contain;
   bottom: 10%;
 }
+
 /* About section style end  */
 /* Product Section style start  */
 .before-title {
@@ -164,6 +197,7 @@ h2 {
   color: var(--text-red);
   padding-left: 20px;
 }
+
 .before-title::before {
   content: '';
   position: absolute;
@@ -174,18 +208,22 @@ h2 {
   width: 10px;
   background-color: var(--text-red);
 }
+
 .product-section {
   background: rgba(251, 247, 242, 1);
   padding-bottom: 70px;
 }
+
 .product-section .swiper-slide {
   height: auto;
 }
+
 .product-card img {
   width: 200px;
   height: 150px;
   object-fit: contain;
 }
+
 .product-card h3 {
   padding-top: 15px;
 }
@@ -200,6 +238,7 @@ h2 {
   transform: translateX(-50%);
   background-color: var(--text-red);
 }
+
 .product-card h3 a {
   text-decoration: none;
   color: var(--light-blue);
@@ -208,13 +247,16 @@ h2 {
   font-family: "Bebas Neue", serif;
 
 }
+
 .product-card p {
   font-family: "Inter", serif;
   font-size: 16px;
 }
+
 .product-section .left-img {
   top: 25%;
 }
+
 .custom-nav-button {
   top: -10% !important;
   border: 0;
@@ -225,12 +267,14 @@ h2 {
   background-color: #fff;
   box-shadow: 0px 0px 13.64px 0px rgba(0, 0, 0, 0.1);
 }
+
 .custom-nav-button.swiper-button-prev {
   left: inherit !important;
   right: 85px;
 }
 
-.custom-nav-button.swiper-button-prev:after, .custom-nav-button.swiper-button-next:after {
+.custom-nav-button.swiper-button-prev:after,
+.custom-nav-button.swiper-button-next:after {
   font-weight: 700;
   font-size: 15px;
   letter-spacing: 0;
@@ -239,93 +283,174 @@ h2 {
   color: var(--black);
 
 }
-.custom-nav-button.swiper-button-prev:hover:after, .custom-nav-button.swiper-button-next:hover:after {
+
+.custom-nav-button.swiper-button-prev:hover:after,
+.custom-nav-button.swiper-button-next:hover:after {
   color: var(--text-red);
 
 }
+
 /* Product Section style end  */
-/* Testimonial Section style start  */
-.testimonial {
+/* Book Section style start  */
+.book-section {
   background-image: url('../images/testimonial-bg.jpeg');
-  background-position: center;
+  background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.book-section h2 {
+  color: #fff;
+}
+
+.book-section .form-control {
+  padding: 10px;
+}
+
+.book-section .form-control,
+.book-section .form-control:focus {
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.book-section .form-control,
+.book-section .form-control:focus,
+.book-section .form-control::placeholder {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+}
+
+.book-section .form-control:focus {
+  color: #fff;
+  box-shadow: none;
+  border-color: #fff;
+}
+
+.book-section input[type="date"] {
+  color-scheme: dark;
+}
+
+/* Book Section style end  */
+/* Testimonial Section style start  */
+.testimonial {}
+
 /* Testimonial Section style end  */
 
 /* Footer style start  */
 .footer {
   position: relative;
-  background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url('../images/footer-bg.jpeg'); 
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url('../images/footer-bg.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: #fff;
+}
+
+.footer-info svg {
+  font-size: 22px;
+  color: var(--yellow);
+}
+
+.footer-info h5 {
+  font-family: "Bebas Neue", serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.footer-info p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+.footer-icon {
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  height: 40px;
+  width: 40px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+.footer-icon svg {
+  font-size: 18px;
 }
 /* Footer style end  */
 
 
 /* Media Quary  */
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1440px) {
   .salad-img {
     height: 38%;
     bottom: 12%;
   }
+
   .product-section .left-img {
     width: 140px;
     height: auto;
     object-fit: contain;
   }
 }
-@media screen and (max-width: 1024px){
+
+@media screen and (max-width: 1024px) {
   h2 {
     font-size: 40px !important;
     line-height: 42px !important;
   }
 }
-@media screen and (max-width: 767px){
+
+@media screen and (max-width: 767px) {
   .ptb-50 {
     padding: 30px 0;
   }
+
   .pt-70 {
     padding-top: 40px;
   }
+
   .pb-70 {
     padding-bottom: 40px;
   }
+
   .custom-nav-button {
     top: 100% !important;
   }
+
   .custom-nav-button.swiper-button-prev {
-    left: 48%!important;
+    left: 48% !important;
     right: inherit;
     margin-left: -50px;
   }
+
   .custom-nav-button.swiper-button-next {
     right: 48% !important;
     margin-right: -50px;
   }
 }
 
-@media screen and (max-width: 490px){
+@media screen and (max-width: 490px) {
   .services svg {
     padding: 20px;
     height: 65px;
     width: 65px;
   }
+
   .services h4 {
     font-size: 22px;
   }
+
   .services p {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 390px){
+
+@media screen and (max-width: 390px) {
   .ct-btn {
     padding: 10px 15px;
   }
+
   .call-btn {
     padding: 10px 15px;
   }
