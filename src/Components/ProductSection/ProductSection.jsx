@@ -6,7 +6,8 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { useEffect, useState } from 'react';
 import Product from '../Product/Product';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Scrollbar } from 'swiper/modules';
+import leftImg from '../../assets/images/product-absolute.png';
 
 const ProductSection = () => {
   const [products, setProducts] = useState([]);
@@ -26,10 +27,10 @@ const ProductSection = () => {
   }, [])
 
   return (
-    <div className='product-section ptb-50'>
+    <div className='product-section pt-70 position-relative'>
       <div className="container">
         <SectionTitle title="POPULAR FOOD ITEMS" preTitle="Crispy, Every Bite Taste" />
-        <div className='py-5 position-relative'>
+        <div className='pt-3 pb-5 py-md-5 position-relative'>
           <button className="swiper-button-prev custom-nav-button"></button>
           <button className="swiper-button-next custom-nav-button"></button>
           <Swiper
@@ -58,6 +59,7 @@ const ProductSection = () => {
             }
           </Swiper>
         </div>
+        <img src={leftImg} className='left-img position-absolute start-0 d-none d-md-block' alt="Img" />
       </div>
     </div>
   );
