@@ -335,7 +335,41 @@ h2 {
 /* Book Section style end  */
 /* Testimonial Section style start  */
 .testimonial {}
+.client-content {
+  background-color: var(--yellow);
+}
+.client-info {
+  border-bottom: 1px solid var(--light-blue);
+}
+.client-info::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 40px;
+  height: 4px;
+  background-color: var(--text-red);
+}
+.client-info h6 {
+  font-family: "Bebas Neue", serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.client-info p {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.client-info img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
 
+.half-star {
+  bottom: 30px;
+}
 /* Testimonial Section style end  */
 
 /* Footer style start  */
