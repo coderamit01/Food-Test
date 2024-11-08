@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "reviewText": "You can't go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would definitely recommend it.",
+    "clientName": "Khalid Al Dawsry",
+    "clientLocation": "Jeddah, Saudi",
+    "clientImage": "../src/assets/images/client.png",
+    "testimonialImage": "../src/assets/images/testmonial.png",
+    "videoUrl": "https://link-to-video.com"
+  },
+  {
+    "id": 2,
+    "reviewText": "The food was absolutely amazing! Every bite was full of flavor and the service was exceptional. Highly recommended for anyone in the area!",
+    "clientName": "Sarah Al Ahmed",
+    "clientLocation": "Dubai, UAE",
+    "clientImage": "../src/assets/images/client.png",
+    "testimonialImage": "../src/assets/images/testmonial.png",
+    "videoUrl": "https://link-to-another-video.com"
+  }
+]

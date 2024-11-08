@@ -6,57 +6,56 @@ import 'swiper/css/pagination';
 import { Navigation, Scrollbar } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import leftImg from '../../assets/images/testimonial-img.png';
-import TestimonialImg from '../../assets/images/testmonial.png';
-import clientImg from '../../assets/images/client.png';
-import star from '../../assets/images/half-star.svg';
+
+import TestimonialItem from "../TestimonialItem/TestimonialItem";
+import { useEffect, useState } from "react";
 
 const Testimonial = () => {
+  const [reviews, setReviews] = useState([]);
+  useEffect(() => {
+    const fetchReviews = async () => {
+      try {
+        const getReview = await fetch('/review.json');
+        if (!getReview.ok) throw new Error('Failed to Load data');
+        const product = await getReview.json();
+        setReviews(product);
+      } catch (error) {
+        console.log(error.message);
+      }
+    }
+    fetchReviews();
+  }, [])
   return (
     <div className='testimonial ptb-50 position-relative'>
       <div className="container">
         <SectionTitle title="What Some of my Customers Say" preTitle="Crispy, Every Bite Taste" />
-        <div className="row g-0">
-          <div className="col-md-5 position-relative">
-            <div className="client-content p-5">
-              <p>You can't go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would defiantly recommend it.</p>
-              <div className="client-info d-flex align-items-center justify-content-between position-relative pb-4">
-                <div>
-                  <h6 className="mb-0">Khalid Al Dawsry</h6>
-                  <p className="mb-0">Jeddah, Saudi</p>
-                </div>
-                <img src={clientImg} alt="Client Image" />
-              </div>
-            </div>
-            <img src={star} alt="Satar Image" className="position-absolute start-0 half-star" />
-          </div>
-          <div className="col-md-7 position-relative">
-            <img src={TestimonialImg} alt="Tesimonial Image w-100" />
-          </div>
-        </div>
         <div className='pt-3 pb-5 py-md-5 position-relative'>
           <button className="swiper-button-prev custom-nav-button"></button>
           <button className="swiper-button-next custom-nav-button"></button>
           <Swiper
-            modules={[Navigation, Scrollbar]}
+            modules={[Navigation]}
             spaceBetween={25}
-            slidesPerView={4}
+            slidesPerView={1}
             loop={true}
             navigation={{
               nextEl: '.swiper-button-next',
               prevEl: '.swiper-button-prev',
             }}
-            scrollbar={{ draggable: true }}
             breakpoints={{
-              320: { slidesPerView: 1, spaceBetween: 10 },
-              640: { slidesPerView: 1, spaceBetween: 15 },
-              768: { slidesPerView: 3, spaceBetween: 20 },
-              1024: { slidesPerView: 4, spaceBetween: 25 },
+              // 320: { slidesPerView: 1, spaceBetween: 10 },
+              // 640: { slidesPerView: 1, spaceBetween: 15 },
+              // 768: { slidesPerView: 3, spaceBetween: 20 },
+              // 1024: { slidesPerView: 1, spaceBetween: 25 },
             }}
           >
+            {
+              reviews.map(review => (
+                <SwiperSlide key={review.id}>
+                  <TestimonialItem review={review} />
+                </SwiperSlide>
+              ))
+            }
 
-            {/* <SwiperSlide>
-                  sdfdf
-                </SwiperSlide> */}
           </Swiper>
         </div>
         {/* <img src={leftImg} className='left-img position-absolute start-0 d-none d-md-block' alt="Img" /> */}
