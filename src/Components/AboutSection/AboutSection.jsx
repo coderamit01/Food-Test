@@ -8,7 +8,7 @@ import BurgerImg from '../../assets/images/about-img.png'
 const AboutSection = () => {
   
 return (
-  <div className='ptb-50 position-relative'>
+  <section className='ptb-50 position-relative'>
     <div className="container">
       <div className="row">
         <div className="col-lg-6 mb-4 mb-lg-0 position-relative">
@@ -25,7 +25,7 @@ return (
       </div>
       <Services />
     </div>
-  </div>
+  </section>
 );
 };
 

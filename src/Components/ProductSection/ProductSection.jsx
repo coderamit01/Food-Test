@@ -27,7 +27,7 @@ const ProductSection = () => {
   }, [])
 
   return (
-    <div className='product-section pt-70 position-relative'>
+    <section className='product-section pt-70 position-relative'>
       <div className="container">
         <SectionTitle title="POPULAR FOOD ITEMS" preTitle="Crispy, Every Bite Taste" />
         <div className='pt-3 pb-5 py-md-5 position-relative'>
@@ -61,7 +61,7 @@ const ProductSection = () => {
         </div>
         <img src={leftImg} className='left-img position-absolute start-0 d-none d-md-block' alt="Img" />
       </div>
-    </div>
+    </section>
   );
 };
 

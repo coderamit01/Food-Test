@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const BookSection = () => {
   return (
-    <div className='book-section pt-70 pb-70'>
+    <section className='book-section pt-70 pb-70'>
       <div className="container">
         <div className="row">
           <div className="col-md-6">
@@ -16,7 +16,7 @@ const BookSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
