@@ -5,7 +5,8 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Scrollbar } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import leftImg from '../../assets/images/testimonial-img.png';
+import leftImg from '../../assets/images/tomato.png';
+import leaf from '../../assets/images/leaf.png';
 
 import TestimonialItem from "../TestimonialItem/TestimonialItem";
 import { useEffect, useState } from "react";
@@ -26,7 +27,7 @@ const Testimonial = () => {
     fetchReviews();
   }, [])
   return (
-    <div className='testimonial ptb-50 position-relative'>
+    <section className='testimonial-section ptb-50 position-relative'>
       <div className="container">
         <SectionTitle title="What Some of my Customers Say" preTitle="Crispy, Every Bite Taste" />
         <div className='pt-3 pb-5 py-md-5 position-relative'>
@@ -58,9 +59,10 @@ const Testimonial = () => {
 
           </Swiper>
         </div>
-        {/* <img src={leftImg} className='left-img position-absolute start-0 d-none d-md-block' alt="Img" /> */}
+        <img src={leftImg} className='tomato position-absolute d-none d-md-block' alt="Image" />
+        <img src={leaf} className='leaf position-absolute d-none d-md-block' alt="Image" />
       </div>
-    </div>
+    </section>
   );
 };
 
