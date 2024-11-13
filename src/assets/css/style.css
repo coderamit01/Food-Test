@@ -123,7 +123,10 @@ h2 {
 /* Hero section style start  */
 .hero-section {
   padding: 170px 0 120px 0;
-  background: linear-gradient(123.4deg, #BD1F17 40.8%, #A61D13 76.4%, #8E1B0F 120.69%);
+  background-image: url('../images/hero-bg.png'), linear-gradient(123.4deg, #BD1F17 40.8%, #A61D13 76.4%, #8E1B0F 120.69%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-content .hero-title {
@@ -412,7 +415,7 @@ h2 {
 }
 
 .custom-nav-button {
-  top: -15% !important;
+  top: -16% !important;
   border: 0;
   outline: 0;
   width: 50px !important;
@@ -491,12 +494,17 @@ h2 {
   width: 20px;
   height: 20px;
 }
+
 .book-section input[type="number"]::-webkit-inner-spin-button {
   opacity: 1;
 }
 
 /* Book Section style end  */
 /* Testimonial Section style start  */
+.testimonial-section .custom-nav-button {
+  top: -11.5% !important;
+}
+
 .client-content {
   background-color: var(--yellow);
 }
@@ -547,31 +555,26 @@ h2 {
 }
 
 .overlay-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   width: 40px;
   height: 40px;
-  text-align: center;
   background: var(--yellow);
   animation: pulse 2s infinite;
   -webkit-animation: pulse 2s infinite;
   border-radius: 50%;
   -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   left: 47%;
-  top: 44.5%;
+  top: 45%;
 }
 
 .overlay-icon svg {
-  font-size: 24px;
+  font-size: 28px;
   margin-left: 2px;
   color: var(--black);
-  line-height: 41px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  line-height: 40px;
 }
 
 @keyframes pulse {
@@ -600,7 +603,7 @@ h2 {
 .leaf {
   width: 20%;
   right: 0;
-  bottom: 90px;
+  bottom: 60px;
 }
 
 .custom-modal-backdrop {
@@ -683,6 +686,7 @@ h2 {
   .leaf {
     width: 20%;
     right: 0;
+    bottom: 90px;
   }
 }
 
@@ -719,6 +723,10 @@ h2 {
     right: -20px;
   }
 
+  .custom-nav-button {
+    top: -15% !important;
+  }
+
   .testimonial-section .custom-nav-button {
     top: -6% !important;
   }
@@ -753,6 +761,7 @@ h2 {
   .pb-90 {
     padding-bottom: 35px;
   }
+
   .testimonial-section .custom-nav-button,
   .custom-nav-button {
     top: 100% !important;

@@ -13,7 +13,6 @@ const BookingForm = () => {
         </div>
         <div className="col-md-6">
           <input className="form-control position-relative" type="text" placeholder="Reservation Date" onFocus={(e) => (e.target.type = "date")}  onBlur={(e) => (e.target.type = e.target.value ? "date" : "text")} />
-          <img src="../../assets/images/calendar.png" alt="" className="calendar-img" />
         </div>
         <div className="col-md-6">
           <input className="form-control" type="number" placeholder="Total People" min="0" />
